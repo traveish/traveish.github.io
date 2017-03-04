@@ -1,0 +1,12 @@
+$avatar-size: 320px;
+
+.head__avatar {
+  width: $avatar-size;
+  height: $avatar-size;
+  background-color: white;
+  background-image: url(/assets/images/ntenna_400x400.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+}

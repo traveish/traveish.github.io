@@ -7,6 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
     <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
+    <link rel="stylesheet" href="{{ '/assets/css/traveish.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -29,6 +30,10 @@
           <a href="{{ site.github.repository_url }}" class="button"><small>Follow me on</small> GitHub</a>
         {% endif %}
       </div>
+
+      <a class="head__avatar" href="/">
+        TRAVE
+      </a>
     </header>
 
     <div id="content-wrapper">
@@ -68,12 +73,14 @@
 
           <strong>Author</strong>
 
-          {% assign author = site.data.people[page.author] %}
-          <a rel="author"
-          href="https://twitter.com/{{ author.twitter }}"
-          title="{{ author.name }}">
-            {{ author.name }}
-          </a>
+          {% if page.author %}
+            {% assign author = site.data.people[page.author] %}
+            <a rel="author"
+            href="https://twitter.com/{{ author.twitter }}"
+            title="{{ author.name }}">
+              {{ author.name }}
+            </a>
+          {% endif %}
 
           <br><br>
 
