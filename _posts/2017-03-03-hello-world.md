@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Hello World!"
 date:   2017-03-03 14:11:00 -0700
 categories: jekyll github markdown

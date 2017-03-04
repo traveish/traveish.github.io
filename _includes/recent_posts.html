@@ -1,0 +1,13 @@
+
+<strong>Posts</strong>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}#disqus_thread">
+        {{ post.title }}<br>
+        <small>{{ post.date | date_to_string }}</small>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
