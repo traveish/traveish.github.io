@@ -1,6 +1,6 @@
 # whois Trave?
 
-__Travis Barney__ is a slightly chubby, yet surprisingly average human being who lives in Salt Lake City, Utah.&nbsp; He spends his time developing web applications, presently working for [Vivint Smart Home](http://vivint.com) as a UI Engineer.&nbsp; You will typically find him hunkered down in his home wearing comfy shorts, but sometimes finds himself outdoors in the Cottonwood canyons with his wife, son, and dogs.
+__Travis Barney__ is a slightly chubby, yet surprisingly average human being who lives in Salt Lake City, Utah.&nbsp; He spends his time developing web applications, presently working for [Vivint Smart Home](http://vivint.com) as a UI Engineer.&nbsp; You will typically find him hunkered down in his home wearing comfy shorts, but sometimes ventures outdoors into the Cottonwood canyons with his wife, son, and dogs.
 
 ## Motivation
 
@@ -15,7 +15,10 @@ If you feel like teaching me a lesson for being wrong about something, or wantin
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">
+        {{ post.title }}
+        <small>{{ post.date }}</small>
+      </a>
     </li>
   {% endfor %}
 </ul>
