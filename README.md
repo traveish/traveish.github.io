@@ -9,16 +9,3 @@ I am making an effort to reciprocate the knowledge I've gained over the years fr
 ### Contact
 
 If you feel like teaching me a lesson for being wrong about something, or wanting me to expound on any ideas further please let me know.&nbsp; I can be found through twitter at  [@travenasty](http://twitter.com/travenasty), mostly consuming things like an information vampire.
-
-#### Posts
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">
-        {{ post.title }}
-        <small>{{ post.date }}</small>
-      </a>
-    </li>
-  {% endfor %}
-</ul>
